@@ -27,6 +27,13 @@ class HomeViewController: UIViewController {
     }
     @IBAction func searchButtonPressed(_ sender: UIBarButtonItem) {
         //TODO: Me kalu ne SearchController
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let searchController = storyboard.instantiateViewController(withIdentifier: "searchViewControllerID") as! SearchViewController
+        self.navigationController?.pushViewController(searchController, animated: true)
+    }
+    
+    @IBAction func onLabelaEParePressed(_ sender: UITapGestureRecognizer) {
+        firstLabel.text = "Touched!"
     }
 }
 

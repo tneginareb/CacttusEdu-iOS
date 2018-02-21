@@ -13,13 +13,19 @@
         <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="CacttusEdu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="ParentView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labela e pare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN5-3b-WVH">
-                                <rect key="frame" x="136" y="323" width="103" height="21"/>
+                                <rect key="frame" x="136" y="313.5" width="103" height="40"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="NSb-b5-Ia9"/>
+                                    <constraint firstAttribute="height" constant="40" id="sMJ-4q-TuH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -56,12 +62,25 @@
                                     <segue destination="krK-Qt-48z" kind="show" identifier="showSecondSegue" id="G9e-gg-nd6"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cD-uU-7Vv">
+                                <rect key="frame" x="67" y="420" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="OHU-HI-1tm"/>
+                                    <constraint firstAttribute="height" constant="128" id="dBa-0Y-GoP"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="qVm-VZ-MK3" appends="YES" id="bsO-UM-dlD"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cF7-yV-zrD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="0lg-zE-Z2f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y1V-LZ-SRB" secondAttribute="bottom" constant="20" id="GUJ-oQ-vjA"/>
                             <constraint firstItem="cF7-yV-zrD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NTr-Qp-Hfa"/>
+                            <constraint firstItem="Y1V-LZ-SRB" firstAttribute="top" secondItem="0cD-uU-7Vv" secondAttribute="bottom" constant="69" id="Tr2-yh-4Bw"/>
+                            <constraint firstItem="0cD-uU-7Vv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aWW-72-9pj"/>
                             <constraint firstItem="cN5-3b-WVH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jX7-MQ-3kd"/>
                             <constraint firstItem="cN5-3b-WVH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oIq-cK-hOK"/>
                             <constraint firstItem="tyn-l3-h3D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qXO-MA-hr5"/>
@@ -69,6 +88,9 @@
                             <constraint firstItem="Y1V-LZ-SRB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xD9-Iy-693"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qVm-VZ-MK3" appends="YES" id="acm-85-WQ4"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="vyh-tL-eVv">
                         <barButtonItem key="leftBarButtonItem" title="Home" id="UZ3-1n-YJf">
@@ -85,9 +107,13 @@
                         <outlet property="firstLabel" destination="cN5-3b-WVH" id="21M-v8-xhE"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="3" id="qVm-VZ-MK3">
+                    <connections>
+                        <action selector="onLabelaEParePressed:" destination="BYZ-38-t0r" id="PVL-aM-07U"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="17" y="161"/>
+            <point key="canvasLocation" x="16.800000000000001" y="160.56971514242881"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="PKx-f7-aMu">
@@ -96,9 +122,32 @@
                     <view key="view" contentMode="scaleToFill" id="deA-IB-X06">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zr3-q7-s7g">
+                                <rect key="frame" x="50" y="70" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuc-t3-6vz">
+                                <rect key="frame" x="50" y="122" width="275" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CmJ-cC-fRt" firstAttribute="trailing" secondItem="Zr3-q7-s7g" secondAttribute="trailing" constant="50" id="0fM-Ir-h6x"/>
+                            <constraint firstItem="CmJ-cC-fRt" firstAttribute="trailing" secondItem="cuc-t3-6vz" secondAttribute="trailing" constant="50" id="7gj-5v-XQZ"/>
+                            <constraint firstItem="cuc-t3-6vz" firstAttribute="top" secondItem="Zr3-q7-s7g" secondAttribute="bottom" constant="22" id="DHg-UH-MMe"/>
+                            <constraint firstItem="cuc-t3-6vz" firstAttribute="leading" secondItem="CmJ-cC-fRt" secondAttribute="leading" constant="50" id="ee1-NV-Fcl"/>
+                            <constraint firstItem="Zr3-q7-s7g" firstAttribute="leading" secondItem="CmJ-cC-fRt" secondAttribute="leading" constant="50" id="gJq-wH-fFX"/>
+                            <constraint firstItem="Zr3-q7-s7g" firstAttribute="top" secondItem="CmJ-cC-fRt" secondAttribute="top" constant="50" id="xIQ-kd-hob"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CmJ-cC-fRt"/>
                     </view>
+                    <navigationItem key="navigationItem" id="j0Q-y2-gis"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62k-HJ-KQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,7 +196,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hGj-DS-t2g"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0er-rk-Zwz"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nGZ-xg-pqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
