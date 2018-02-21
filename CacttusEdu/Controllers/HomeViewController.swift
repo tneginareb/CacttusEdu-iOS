@@ -24,7 +24,9 @@ class HomeViewController: UIViewController {
     
     @IBAction func topButtonPressed(_ sender: UIButton) {
         firstLabel.text = "Ndryshimi i Labeles"
-        
+    }
+    @IBAction func searchButtonPressed(_ sender: UIBarButtonItem) {
+        //TODO: Me kalu ne SearchController
     }
 }
 

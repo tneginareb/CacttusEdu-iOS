@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B318857203DDC3900C41625 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B318856203DDC3900C41625 /* SearchViewController.swift */; };
 		6BCF44C32034B62700176E6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF44C22034B62700176E6A /* AppDelegate.swift */; };
 		6BCF44C52034B62700176E6A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF44C42034B62700176E6A /* HomeViewController.swift */; };
 		6BCF44C82034B62700176E6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BCF44C62034B62700176E6A /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B318856203DDC3900C41625 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		6BCF44BF2034B62700176E6A /* CacttusEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CacttusEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCF44C22034B62700176E6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BCF44C42034B62700176E6A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B318858203DDC4D00C41625 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6BCF44D42034C69500176E6A /* SecondViewController.swift */,
+				6BCF44C42034B62700176E6A /* HomeViewController.swift */,
+				6B318856203DDC3900C41625 /* SearchViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		6BCF44B62034B62600176E6A = {
 			isa = PBXGroup;
 			children = (
@@ -57,11 +69,10 @@
 			isa = PBXGroup;
 			children = (
 				6BCF44C22034B62700176E6A /* AppDelegate.swift */,
-				6BCF44D42034C69500176E6A /* SecondViewController.swift */,
-				6BCF44C42034B62700176E6A /* HomeViewController.swift */,
 				6BCF44C62034B62700176E6A /* Main.storyboard */,
-				6BCF44C92034B62700176E6A /* Assets.xcassets */,
+				6B318858203DDC4D00C41625 /* Controllers */,
 				6BCF44CB2034B62700176E6A /* LaunchScreen.storyboard */,
+				6BCF44C92034B62700176E6A /* Assets.xcassets */,
 				6BCF44CE2034B62700176E6A /* Info.plist */,
 			);
 			path = CacttusEdu;
@@ -141,6 +152,7 @@
 			files = (
 				6BCF44D52034C69500176E6A /* SecondViewController.swift in Sources */,
 				6BCF44C52034B62700176E6A /* HomeViewController.swift in Sources */,
+				6B318857203DDC3900C41625 /* SearchViewController.swift in Sources */,
 				6BCF44C32034B62700176E6A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
