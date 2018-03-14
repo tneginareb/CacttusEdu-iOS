@@ -8,37 +8,47 @@
 
 import UIKit
 
+
 @IBDesignable
 class TopView: UIView {
     
-    var contentView: UIView?
-    @IBInspectable var nibName: String = "TopView"
+    //MARK:- IB Outlets
+    var contentView:UIView?
     
+    //MARK:- Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        xibSetup()
     }
     
-    private func xibSetup(){
-        guard let view = loadViewFromNib() else {return}
-        
-        view.frame = bounds
-        view.autoresizingMask = [.flexibleWidth,.flexibleHeight]
-        addSubview(view)
-        contentView = view
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupThisView()
     }
     
-    private func loadViewFromNib() -> UIView?{
-        let bundle = Bundle(for: type(of: self))
-        let nib = UINib.init(nibName: nibName, bundle: bundle)
-        return nib.instantiate(withOwner: self, options: nil).first as? UIView
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupThisView()
     }
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
-        xibSetup()
+        setupThisView()
         contentView?.prepareForInterfaceBuilder()
     }
     
+    //MARK:- Lifecycle methods
+    private func setupThisView(){
+        guard let view = loadViewFromNib() else { return }
+        view.frame = bounds
+        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        addSubview(view)
+        contentView = view
+    }
     
+    func loadViewFromNib() -> UIView? {
+        let nibName = String(describing: TopView.self)
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: nibName, bundle: bundle)
+        return nib.instantiate(withOwner: self,options: nil).first as? UIView
+    }
 }
