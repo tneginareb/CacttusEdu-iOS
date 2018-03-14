@@ -29,7 +29,8 @@ class HomeViewController: UIViewController {
         //TODO: Me kalu ne SearchController
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let searchController = storyboard.instantiateViewController(withIdentifier: "searchViewControllerID") as! SearchViewController
-        self.navigationController?.pushViewController(searchController, animated: true)
+        //self.navigationController?.pushViewController(searchController, animated: true)
+        self.navigationController?.pushWithAnim(viewController: searchController)
     }
     
     @IBAction func onLabelaEParePressed(_ sender: UITapGestureRecognizer) {
