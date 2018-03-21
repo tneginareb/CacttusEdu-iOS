@@ -43,5 +43,9 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Do te perdoret vetem per heren e pare per te marrur lokacionin.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Do te perdoret per te shkrepur foto.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Do te perdoret per te zgjedhur foto nga galeria juaj.</string>
 </dict>
 </plist>
