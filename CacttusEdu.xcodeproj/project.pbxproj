@@ -12,6 +12,7 @@
 		6B5FEC1D2050699300B8F0DC /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5FEC1C2050699300B8F0DC /* ContentViewController.swift */; };
 		6B8F8E27207E82A100282E01 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F8E26207E82A100282E01 /* Place.swift */; };
 		6B8F8E29207E83CB00282E01 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F8E28207E83CB00282E01 /* PlacesViewController.swift */; };
+		6B8F8E4D207E8F7300282E01 /* CacttusEdu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F8E4B207E8F7300282E01 /* CacttusEdu.xcdatamodeld */; };
 		6B907CD52062DBE0005FD717 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B907CD42062DBE0005FD717 /* CameraViewController.swift */; };
 		6B97B12F2059AF6A00D12B84 /* Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97B12E2059AF6A00D12B84 /* Inspectable.swift */; };
 		6B9D01EB20603C4600DE1C47 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9D01EA20603C4600DE1C47 /* MapKit.framework */; };
@@ -32,6 +33,7 @@
 		6B5FEC1C2050699300B8F0DC /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		6B8F8E26207E82A100282E01 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		6B8F8E28207E83CB00282E01 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		6B8F8E4C207E8F7300282E01 /* CacttusEdu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CacttusEdu.xcdatamodel; sourceTree = "<group>"; };
 		6B907CD42062DBE0005FD717 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		6B97B12E2059AF6A00D12B84 /* Inspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspectable.swift; sourceTree = "<group>"; };
 		6B9D01EA20603C4600DE1C47 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -136,6 +138,7 @@
 				6BCF44CB2034B62700176E6A /* LaunchScreen.storyboard */,
 				6BCF44C92034B62700176E6A /* Assets.xcassets */,
 				6BCF44CE2034B62700176E6A /* Info.plist */,
+				6B8F8E4B207E8F7300282E01 /* CacttusEdu.xcdatamodeld */,
 			);
 			path = CacttusEdu;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				6B9D01ED20603D1500DE1C47 /* MapViewController.swift in Sources */,
 				6BE2B2B820570E5B00DFBF24 /* TopView.swift in Sources */,
 				6BCF44C32034B62700176E6A /* AppDelegate.swift in Sources */,
+				6B8F8E4D207E8F7300282E01 /* CacttusEdu.xcdatamodeld in Sources */,
 				6B97B12F2059AF6A00D12B84 /* Inspectable.swift in Sources */,
 				6B8F8E27207E82A100282E01 /* Place.swift in Sources */,
 				6B41FECC2059A30D00BB4A70 /* Extensions.swift in Sources */,
@@ -418,6 +422,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6B8F8E4B207E8F7300282E01 /* CacttusEdu.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B8F8E4C207E8F7300282E01 /* CacttusEdu.xcdatamodel */,
+			);
+			currentVersion = 6B8F8E4C207E8F7300282E01 /* CacttusEdu.xcdatamodel */;
+			path = CacttusEdu.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6BCF44B72034B62600176E6A /* Project object */;
 }
