@@ -558,20 +558,54 @@
             </objects>
             <point key="canvasLocation" x="1493.5999999999999" y="1668.2158920539732"/>
         </scene>
-        <!--Places View Controller-->
+        <!--View Controller-->
         <scene sceneID="lk8-ko-RNm">
             <objects>
-                <viewController id="0DY-GQ-UfR" customClass="PlacesViewController" customModule="CacttusEdu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0DY-GQ-UfR" customClass="DBViewController" customModule="CacttusEdu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4sb-cD-0PS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYa-cq-fMl">
+                                <rect key="frame" x="50" y="50" width="37" height="30"/>
+                                <state key="normal" title="Write"/>
+                                <connections>
+                                    <action selector="writePressed:" destination="0DY-GQ-UfR" eventType="touchUpInside" id="VFx-BS-qPS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVs-oX-dzc">
+                                <rect key="frame" x="290" y="50" width="35" height="30"/>
+                                <state key="normal" title="Read"/>
+                                <connections>
+                                    <action selector="readPressed:" destination="0DY-GQ-UfR" eventType="touchUpInside" id="eGm-ao-5UY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qyteti" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueV-n0-N8v">
+                                <rect key="frame" x="0.0" y="168" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ekV-6u-9oD" firstAttribute="trailing" secondItem="FVs-oX-dzc" secondAttribute="trailing" constant="50" id="8a5-4k-h5x"/>
+                            <constraint firstItem="iYa-cq-fMl" firstAttribute="top" secondItem="ekV-6u-9oD" secondAttribute="top" constant="30" id="Brw-vX-msI"/>
+                            <constraint firstItem="iYa-cq-fMl" firstAttribute="leading" secondItem="ekV-6u-9oD" secondAttribute="leading" constant="50" id="EoQ-pM-YTE"/>
+                            <constraint firstItem="ueV-n0-N8v" firstAttribute="top" secondItem="ekV-6u-9oD" secondAttribute="top" constant="148" id="TDE-1z-whR"/>
+                            <constraint firstItem="ekV-6u-9oD" firstAttribute="trailing" secondItem="ueV-n0-N8v" secondAttribute="trailing" id="UtC-Ta-wK7"/>
+                            <constraint firstItem="FVs-oX-dzc" firstAttribute="top" secondItem="ekV-6u-9oD" secondAttribute="top" constant="30" id="WS0-im-E7u"/>
+                            <constraint firstItem="ueV-n0-N8v" firstAttribute="leading" secondItem="ekV-6u-9oD" secondAttribute="leading" id="el9-iU-Yvs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ekV-6u-9oD"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="ueV-n0-N8v" id="khY-tC-Drk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zQ-FM-flb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2524" y="1669"/>
+            <point key="canvasLocation" x="2524" y="1668.2158920539732"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="T4E-We-ij5">

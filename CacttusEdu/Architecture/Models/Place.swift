@@ -17,7 +17,5 @@ class Place: NSObject {
         self.id = id
         self.name = name
     }
-    
 
-    
 }

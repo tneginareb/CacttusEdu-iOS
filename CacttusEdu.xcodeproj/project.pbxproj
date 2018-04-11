@@ -13,6 +13,7 @@
 		6B8F8E27207E82A100282E01 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F8E26207E82A100282E01 /* Place.swift */; };
 		6B8F8E29207E83CB00282E01 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F8E28207E83CB00282E01 /* PlacesViewController.swift */; };
 		6B8F8E4D207E8F7300282E01 /* CacttusEdu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F8E4B207E8F7300282E01 /* CacttusEdu.xcdatamodeld */; };
+		6B8F8E4F207E912000282E01 /* DBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F8E4E207E912000282E01 /* DBViewController.swift */; };
 		6B907CD52062DBE0005FD717 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B907CD42062DBE0005FD717 /* CameraViewController.swift */; };
 		6B97B12F2059AF6A00D12B84 /* Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97B12E2059AF6A00D12B84 /* Inspectable.swift */; };
 		6B9D01EB20603C4600DE1C47 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9D01EA20603C4600DE1C47 /* MapKit.framework */; };
@@ -34,6 +35,7 @@
 		6B8F8E26207E82A100282E01 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		6B8F8E28207E83CB00282E01 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		6B8F8E4C207E8F7300282E01 /* CacttusEdu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CacttusEdu.xcdatamodel; sourceTree = "<group>"; };
+		6B8F8E4E207E912000282E01 /* DBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBViewController.swift; sourceTree = "<group>"; };
 		6B907CD42062DBE0005FD717 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		6B97B12E2059AF6A00D12B84 /* Inspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspectable.swift; sourceTree = "<group>"; };
 		6B9D01EA20603C4600DE1C47 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -72,6 +74,7 @@
 				6B9D01EC20603D1500DE1C47 /* MapViewController.swift */,
 				6B907CD42062DBE0005FD717 /* CameraViewController.swift */,
 				6B8F8E28207E83CB00282E01 /* PlacesViewController.swift */,
+				6B8F8E4E207E912000282E01 /* DBViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				6B5FEC1D2050699300B8F0DC /* ContentViewController.swift in Sources */,
 				6B907CD52062DBE0005FD717 /* CameraViewController.swift in Sources */,
 				6BCF44D52034C69500176E6A /* SecondViewController.swift in Sources */,
+				6B8F8E4F207E912000282E01 /* DBViewController.swift in Sources */,
 				6BCF44C52034B62700176E6A /* HomeViewController.swift in Sources */,
 				6B318857203DDC3900C41625 /* SearchViewController.swift in Sources */,
 				6B9D01ED20603D1500DE1C47 /* MapViewController.swift in Sources */,
