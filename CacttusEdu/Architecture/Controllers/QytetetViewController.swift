@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QytetetViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class QytetetViewController: UIViewController{
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -42,7 +42,9 @@ class QytetetViewController: UIViewController, UITableViewDelegate, UITableViewD
         fillQytetetArray()
         tableView.reloadData()
     }
-    
+}
+
+extension QytetetViewController: UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -52,15 +54,24 @@ class QytetetViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
+        let cell: QytetTableCell = tableView.dequeueReusableCell(withIdentifier: "QytetTableCell", for: indexPath) as! QytetTableCell
+        
         let qyteti = qytetet[indexPath.row]
         
-        let titleLabel: UILabel = cell.viewWithTag(10) as! UILabel
-        titleLabel.text = "\(qyteti.name)"
+        // METODA 1 -> Permes tagjeve
+        //let titleLabel: UILabel = cell.viewWithTag(10) as! UILabel
+        //titleLabel.text = "\(qyteti.name)"
+        
+        // METODA 2 -> Permes custom cell classes
+        cell.updateViews(with: qyteti)
         
         return cell
     }
-    
-    
 }
+
+extension QytetetViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+}
+
