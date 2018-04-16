@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6B02923B208518B100DB751C /* QytetetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B02923A208518B100DB751C /* QytetetViewController.swift */; };
+		6B02923D208523E200DB751C /* Qytet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B02923C208523E200DB751C /* Qytet.swift */; };
 		6B318857203DDC3900C41625 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B318856203DDC3900C41625 /* SearchViewController.swift */; };
 		6B41FECC2059A30D00BB4A70 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B41FECB2059A30D00BB4A70 /* Extensions.swift */; };
 		6B5FEC1D2050699300B8F0DC /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5FEC1C2050699300B8F0DC /* ContentViewController.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		6B02923A208518B100DB751C /* QytetetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QytetetViewController.swift; sourceTree = "<group>"; };
+		6B02923C208523E200DB751C /* Qytet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qytet.swift; sourceTree = "<group>"; };
 		6B318856203DDC3900C41625 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		6B41FECB2059A30D00BB4A70 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6B5FEC1C2050699300B8F0DC /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				6B8F8E26207E82A100282E01 /* Place.swift */,
+				6B02923C208523E200DB751C /* Qytet.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				6B8F8E4D207E8F7300282E01 /* CacttusEdu.xcdatamodeld in Sources */,
 				6B97B12F2059AF6A00D12B84 /* Inspectable.swift in Sources */,
 				6B02923B208518B100DB751C /* QytetetViewController.swift in Sources */,
+				6B02923D208523E200DB751C /* Qytet.swift in Sources */,
 				6B8F8E27207E82A100282E01 /* Place.swift in Sources */,
 				6B41FECC2059A30D00BB4A70 /* Extensions.swift in Sources */,
 			);
