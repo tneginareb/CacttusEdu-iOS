@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B02923B208518B100DB751C /* QytetetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B02923A208518B100DB751C /* QytetetViewController.swift */; };
 		6B318857203DDC3900C41625 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B318856203DDC3900C41625 /* SearchViewController.swift */; };
 		6B41FECC2059A30D00BB4A70 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B41FECB2059A30D00BB4A70 /* Extensions.swift */; };
 		6B5FEC1D2050699300B8F0DC /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5FEC1C2050699300B8F0DC /* ContentViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B02923A208518B100DB751C /* QytetetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QytetetViewController.swift; sourceTree = "<group>"; };
 		6B318856203DDC3900C41625 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		6B41FECB2059A30D00BB4A70 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6B5FEC1C2050699300B8F0DC /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				6B907CD42062DBE0005FD717 /* CameraViewController.swift */,
 				6B8F8E28207E83CB00282E01 /* PlacesViewController.swift */,
 				6B8F8E4E207E912000282E01 /* DBViewController.swift */,
+				6B02923A208518B100DB751C /* QytetetViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				6BCF44C32034B62700176E6A /* AppDelegate.swift in Sources */,
 				6B8F8E4D207E8F7300282E01 /* CacttusEdu.xcdatamodeld in Sources */,
 				6B97B12F2059AF6A00D12B84 /* Inspectable.swift in Sources */,
+				6B02923B208518B100DB751C /* QytetetViewController.swift in Sources */,
 				6B8F8E27207E82A100282E01 /* Place.swift in Sources */,
 				6B41FECC2059A30D00BB4A70 /* Extensions.swift in Sources */,
 			);
