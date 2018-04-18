@@ -41,6 +41,7 @@ class QytetetViewController: UIViewController{
     @IBAction func addPressed(_ sender: UIButton) {
         fillQytetetArray()
         tableView.reloadData()
+        //tableView.setEditing(true, animated: true)
     }
 }
 
@@ -64,14 +65,16 @@ extension QytetetViewController: UITableViewDataSource{
         
         // METODA 2 -> Permes custom cell classes
         cell.updateViews(with: qyteti)
-        
+        cell.selectionStyle = .none
         return cell
     }
 }
 
 extension QytetetViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let qyteti = qytetet[indexPath.row]
+
+        print("indexpath.row: \(qyteti.name)")
     }
 }
 
