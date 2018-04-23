@@ -22,6 +22,8 @@
 		6B97B12F2059AF6A00D12B84 /* Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97B12E2059AF6A00D12B84 /* Inspectable.swift */; };
 		6B9D01EB20603C4600DE1C47 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9D01EA20603C4600DE1C47 /* MapKit.framework */; };
 		6B9D01ED20603D1500DE1C47 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D01EC20603D1500DE1C47 /* MapViewController.swift */; };
+		6B9E3F2E208E4F4C00DFE8BE /* PostetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9E3F2D208E4F4C00DFE8BE /* PostetViewController.swift */; };
+		6B9E3F30208E5E7200DFE8BE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9E3F2F208E5E7200DFE8BE /* Post.swift */; };
 		6BCF44C32034B62700176E6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF44C22034B62700176E6A /* AppDelegate.swift */; };
 		6BCF44C52034B62700176E6A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF44C42034B62700176E6A /* HomeViewController.swift */; };
 		6BCF44C82034B62700176E6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BCF44C62034B62700176E6A /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		6B97B12E2059AF6A00D12B84 /* Inspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspectable.swift; sourceTree = "<group>"; };
 		6B9D01EA20603C4600DE1C47 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6B9D01EC20603D1500DE1C47 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		6B9E3F2D208E4F4C00DFE8BE /* PostetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostetViewController.swift; sourceTree = "<group>"; };
+		6B9E3F2F208E5E7200DFE8BE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		6BCF44BF2034B62700176E6A /* CacttusEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CacttusEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCF44C22034B62700176E6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BCF44C42034B62700176E6A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				6B8F8E4E207E912000282E01 /* DBViewController.swift */,
 				6B02923A208518B100DB751C /* QytetetViewController.swift */,
 				6B81701C2087BBAE004C8B71 /* ProduktetViewController.swift */,
+				6B9E3F2D208E4F4C00DFE8BE /* PostetViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 			children = (
 				6B8F8E26207E82A100282E01 /* Place.swift */,
 				6B02923C208523E200DB751C /* Qytet.swift */,
+				6B9E3F2F208E5E7200DFE8BE /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,10 +260,12 @@
 				6B8F8E4D207E8F7300282E01 /* CacttusEdu.xcdatamodeld in Sources */,
 				6B97B12F2059AF6A00D12B84 /* Inspectable.swift in Sources */,
 				6B02923B208518B100DB751C /* QytetetViewController.swift in Sources */,
+				6B9E3F2E208E4F4C00DFE8BE /* PostetViewController.swift in Sources */,
 				6B02923D208523E200DB751C /* Qytet.swift in Sources */,
 				6B8F8E27207E82A100282E01 /* Place.swift in Sources */,
 				6B41FECC2059A30D00BB4A70 /* Extensions.swift in Sources */,
 				6B81701D2087BBAE004C8B71 /* ProduktetViewController.swift in Sources */,
+				6B9E3F30208E5E7200DFE8BE /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
