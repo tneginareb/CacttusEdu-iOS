@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class Post: NSObject {
 
@@ -17,6 +18,8 @@ class Post: NSObject {
     let pershkrimi: String
     let created_date: String
     
+    
+    //With native methods
     init(jsonObject: [String : AnyObject]) {
         self.id = jsonObject["id"] as? String ?? ""
         self.user_id = jsonObject["user_id"] as? String ?? ""
@@ -24,6 +27,16 @@ class Post: NSObject {
         self.photo_url = jsonObject["photo_url"] as? String ?? ""
         self.pershkrimi = jsonObject["pershkrimi"] as? String ?? ""
         self.created_date = jsonObject["created_date"] as? String ?? ""
+    }
+    
+    //With SwiftyJSON Framework
+    init(withSwiftyJSONObject jsonObject: JSON) {
+        self.id = jsonObject["id"].string ?? ""
+        self.user_id = jsonObject["user_id"].string ?? ""
+        self.username =  jsonObject["username"].string ?? ""
+        self.photo_url = jsonObject["photo_url"].string ?? ""
+        self.pershkrimi = jsonObject["pershkrimi"].string ?? ""
+        self.created_date = jsonObject["created_date"].string ?? ""
     }
     
 

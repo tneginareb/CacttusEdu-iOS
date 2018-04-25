@@ -47,5 +47,23 @@
 	<string>Do te perdoret per te shkrepur foto.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Do te perdoret per te zgjedhur foto nga galeria juaj.</string>
+    
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>yourdomain.com</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+                <false/>
+            </dict>
+        </dict>
+    </dict>
+    
+    
 </dict>
 </plist>
